@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{product.productName}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+        <ion-slides pager>
+
+            <ion-slide style="background-color: white">
+                <ion-img src="{{product.imageURL}}"></ion-img>
+                <h2>{{product.productName}}</h2>
+                <p>{{product.productDescription}}</p>
+                <p>{{product.price | currency:'USD':true:'1.2-2'}}</p>
+            </ion-slide>
+
+        </ion-slides>
+
+
+</ion-content>

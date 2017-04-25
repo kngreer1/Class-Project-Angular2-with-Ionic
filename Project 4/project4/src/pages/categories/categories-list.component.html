@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Categories List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+        <ion-list>
+            <ion-item tappable *ngFor='let category of categories' (click)="itemTapped($event, category)">
+                <ion-thumbnail item-left>
+                    <ion-img src="{{category.imageURL}}"></ion-img>
+                </ion-thumbnail>
+                <h2>{{category.categoryName}}</h2>
+            </ion-item>
+        </ion-list>
+
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Product List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+        <ion-list>
+            <ion-item tappable *ngFor='let product of products' (click)="itemTapped($event, product)">
+                <ion-thumbnail item-left>
+                    <img src="{{product.imageURL}}" />
+                </ion-thumbnail>
+                <h2>{{product.productName}}</h2>
+                <p>{{product.price | currency:'USD':true:'1.2-2'}}</p>
+            </ion-item>
+        </ion-list>
+
+</ion-content>
