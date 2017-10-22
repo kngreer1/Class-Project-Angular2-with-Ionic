@@ -1,6 +1,6 @@
 {
   "name": "Ionic Class Project",
-  "app_id": "58c471cc",
-  "typescript": true,
-  "v2": true
+  "app_id": "34ec8fd1",
+  "integrations": {},
+  "type": "ionic-angular"
 }
